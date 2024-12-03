@@ -53,13 +53,13 @@ func pt1() {
 }
 
 func count_occurances(slice []int, target int) int {
-  count := 0
-  for _, num := range slice {
-    if num == target {
-      count++
-    }
-  }
-  return count
+	count := 0
+	for _, num := range slice {
+		if num == target {
+			count++
+		}
+	}
+	return count
 }
 
 func pt2() {
@@ -90,15 +90,15 @@ func pt2() {
 		slice_first = append(slice_first, first_int)
 		slice_second = append(slice_second, second_int)
 	}
-  total_score := 0
+	total_score := 0
 
-  for _, first := range slice_first {
-    count := count_occurances(slice_second, first)
-    score:= count * first
-    total_score += score
-  }
+	for _, first := range slice_first {
+		count := count_occurances(slice_second, first)
+		score := count * first
+		total_score += score
+	}
 
-  fmt.Println(total_score)
+	fmt.Println(total_score)
 }
 
 func main() {
