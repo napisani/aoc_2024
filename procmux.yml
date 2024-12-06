@@ -1,0 +1,22 @@
+layout:
+  processes_list_width: 40
+  hide_sidebar_when_not_focused: true
+style:
+  color_level: 'truecolors'
+  show_borders: false
+  show_scrollbar: false
+
+keybinding:
+  switch_focus:
+    - w
+
+procs:
+  "run-day":
+    shell: "go run day5/main.go"
+    autostart: false
+    description: "run day"
+    categories:
+      - "run day"
+
+signal_server:
+  enable: true
